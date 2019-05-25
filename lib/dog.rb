@@ -43,7 +43,7 @@ class Dog
 
     # Return an instance of the Dog class
     binding.pry
-    new_dog = Dog.new(name: name, breed: breed)
+    new_dog = Dog.new(name: name, breed: breed, id:id)
   end
 
   def self.create(name:, breed:)
