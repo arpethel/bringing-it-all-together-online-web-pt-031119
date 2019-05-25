@@ -47,6 +47,7 @@ class Dog
   def self.create(dog_attributes)
     dog_attributes.each do |names, breeds|
       names.each do |name|
+        binding.pry
       end
       binding.pry
     end
