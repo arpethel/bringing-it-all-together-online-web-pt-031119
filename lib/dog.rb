@@ -1,7 +1,7 @@
 require 'pry'
 
 class Dog
-  attr_accessor :name, :breed
+  attr_accessor :id, :name, :breed
 # binding.pry
   def initialize(id:, name:, breed:)
     # binding.pry
