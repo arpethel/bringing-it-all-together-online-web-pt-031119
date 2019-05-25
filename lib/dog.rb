@@ -1,9 +1,11 @@
 require 'pry'
 
 class Dog
-  attr_accessor :id, :name, :breed
+  # attr_accessor :id, :name, :breed
+  attr_accessor :name, :breed
+  attr_reader :id
 
-  def initialize(name:, breed:)
+  def initialize(id=nil, name:, breed:)
     # binding.pry
     @id = id
     @name = name
