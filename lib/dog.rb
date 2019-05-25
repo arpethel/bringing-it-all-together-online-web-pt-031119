@@ -57,7 +57,7 @@ class Dog
 
     dog_found = db.execute(sql, id_num).flatten
 
-    Pokemon.new(id: new_pokemon[0], name: new_pokemon[1], type: new_pokemon[2], db: db)
+    Dog.new(id: dog_found[0], name: dog_found[1], breed: dog_found[2])
   end
 
 end
