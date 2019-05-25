@@ -10,6 +10,5 @@ class Dog
     @breed = breed
   end
 
-binding.pry
 
 end
