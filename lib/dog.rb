@@ -44,9 +44,9 @@ class Dog
     # Return an instance of the Dog class
   end
 
-  def self.create(dog_attributes)
+  def self.create(name:, breed:)
     # dog_attributes.keys
-binding.pry
+# binding.pry
 
   end
 
