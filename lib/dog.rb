@@ -42,6 +42,8 @@ class Dog
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
 
     # Return an instance of the Dog class
+    binding.pry
+    new_dog = Dog.new(name: name, breed: breed)
   end
 
   def self.create(name:, breed:)
