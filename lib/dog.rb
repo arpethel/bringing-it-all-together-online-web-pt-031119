@@ -55,9 +55,21 @@ class Dog
       WHERE id = ?
       SQL
 
-    dog_found = DB[:conn].execute(sql, id_num).flatten
+    dog_found_by_id = DB[:conn].execute(sql, id_num).flatten
 
-    Dog.new(id: dog_found[0], name: dog_found[1], breed: dog_found[2])
+    Dog.new(id: dog_found_by_id[0], name: dog_found_by_id[1], breed: dog_found_by_id[2])
+  end
+
+  def self.find_by_name(dog_name)
+    sql = <<-SQL
+      SELECT *
+      FROM dogs
+      WHERE id = ?
+      SQL
+
+    dog_found_by_name = DB[:conn].execute(sql, dog_name).flatten
+
+    Dog.new(id: dog_found_by_name[0], name: dog_found_by_name[1], breed: dog_found_by_name[2])
   end
 
 end
