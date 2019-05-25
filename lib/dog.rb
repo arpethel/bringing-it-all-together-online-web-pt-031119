@@ -88,4 +88,8 @@ class Dog
     dog_from_db = self.new(id: id, name: name, breed: breed)
   end
 
+  def self.find_or_create_by
+    binding.pry
+  end
+
 end
