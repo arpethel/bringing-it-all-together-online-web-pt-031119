@@ -82,12 +82,10 @@ class Dog
   end
 
   def self.new_from_db(row)
-    # binding.pry
     id = row[0]
     name = row[1]
     breed = row[2]
     dog_from_db = self.new(id: id, name: name, breed: breed)
-    # binding.pry
   end
 
 end
