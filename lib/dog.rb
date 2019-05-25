@@ -9,5 +9,5 @@ class Dog
     @id = id
   end
 
-  
+
 end
