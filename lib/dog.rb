@@ -93,9 +93,9 @@ class Dog
     # binding.pry
     if !dog.empty?
       dog_data = dog[0]
-      # binding.pry
-      dog = Dog.new(dog_data[0], dog_data[1], dog_data[2])
       binding.pry
+      dog = Dog.new(dog_data[0], dog_data[1], dog_data[2])
+      # binding.pry
     else
       dog = self.create(name: name, breed: breed)
     end
