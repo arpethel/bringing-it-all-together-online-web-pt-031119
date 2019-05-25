@@ -39,7 +39,7 @@ class Dog
     DB[:conn].execute(sql, name, breed)
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
 
-    new_doggy = Dog.new(name: name, breed: breed)
+    save_dog = Dog.new(name: name, breed: breed)
   end
 
   def self.create(name:, breed:)
@@ -55,7 +55,7 @@ class Dog
       WHERE id = ?
       SQL
 
-    new_dog = db.execute(sql, id_num).flatten
+    dog_found = db.execute(sql, id_num).flatten
 
     Pokemon.new(id: new_pokemon[0], name: new_pokemon[1], type: new_pokemon[2], db: db)
   end
