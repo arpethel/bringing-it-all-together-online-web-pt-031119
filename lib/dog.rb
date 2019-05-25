@@ -48,6 +48,7 @@ class Dog
     dog = Dog.new(name, breed)
     dog.save
     dog
+    binding.pry
   end
 
 end
