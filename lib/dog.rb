@@ -7,7 +7,7 @@ class Dog
   def initialize(name:, breed:)
   # def initialize(id=nil, name:, breed:)
     # binding.pry
-    @id = id
+    # @id = id
     @name = name
     @breed = breed
   end
