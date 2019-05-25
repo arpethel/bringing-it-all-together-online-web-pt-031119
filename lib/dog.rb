@@ -41,13 +41,25 @@ class Dog
 
     # Return an instance of the Dog class
     # binding.pry
-    new_dog = Dog.new(name: name, breed: breed)
+    new_doggy = Dog.new(name: name, breed: breed)
   end
 
   def self.create(name:, breed:)
     dog = Dog.new(name: name, breed: breed)
     dog.save
     dog
+  end
+
+  def self.find_by_id
+    sql = <<-SQL
+      SELECT *
+      FROM dogs
+      WHERE id = ?
+      SQL
+
+    new_dog = db.execute(sql, id_num).flatten
+
+    Pokemon.new(id: new_pokemon[0], name: new_pokemon[1], type: new_pokemon[2], db: db)
   end
 
 end
