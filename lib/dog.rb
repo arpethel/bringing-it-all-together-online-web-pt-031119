@@ -45,7 +45,7 @@ class Dog
   end
 
   def self.create(dog_attributes)
-    # binding.pry
+    binding.pry
   end
 
 end
