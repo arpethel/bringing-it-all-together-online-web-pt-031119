@@ -93,7 +93,7 @@ class Dog
     # binding.pry
     if !dog.empty?
       dog_data = dog[0]
-      binding.pry
+      # binding.pry
       dog = self.new(id: dog_data[0], name: dog_data[1], breed: dog_data[2])
       binding.pry
     else
