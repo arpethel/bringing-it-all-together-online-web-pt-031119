@@ -55,7 +55,7 @@ class Dog
       WHERE id = ?
       SQL
 
-    dog_found = db.execute(sql, id_num).flatten
+    dog_found = DB[:conn].execute(sql, id_num).flatten
 binding.pry
     Dog.new(id: dog_found[0], name: dog_found[1], breed: dog_found[2])
   end
