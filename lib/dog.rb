@@ -42,7 +42,7 @@ class Dog
     # Return an instance of the Dog class
   end
 
-  def self.create(hash, hash3)
+  def self.create(attributes)
     binding.pry
   end
 
