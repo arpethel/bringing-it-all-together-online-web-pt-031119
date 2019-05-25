@@ -2,7 +2,7 @@ require 'pry'
 
 class Dog
   attr_accessor :name, :breed
-binding.pry
+# binding.pry
   def initialize(name, breed, id = nil)
     # binding.pry
     @name = name
