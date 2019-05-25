@@ -85,7 +85,7 @@ class Dog
     id = row[0]
     name = row[1]
     breed = row[2]
-    self.new(name, breed, id)
+    dog_from_db = self.new(name, breed, id)
     binding.pry
   end
 
