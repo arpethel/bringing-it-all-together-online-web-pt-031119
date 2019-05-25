@@ -55,7 +55,7 @@ class Dog
       WHERE id = ?
       SQL
 
-      binding.pry
+      # binding.pry
     dog_found = DB[:conn].execute(sql, id_num).flatten
 
     binding.pry
